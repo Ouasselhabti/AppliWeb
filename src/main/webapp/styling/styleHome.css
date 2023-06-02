@@ -1,0 +1,231 @@
+/* Barre de navigation */
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body
+{
+  background-image: none;
+  background-size : cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+.menu-bar
+{
+  background: #020744;
+  text-align: center;
+}
+.menu-bar ul
+{
+  display: inline-flex;
+  list-style: none;
+  color: #f1f1f1;
+}
+.menu-bar ul li 
+{
+  width: 120px;
+  margin: 15px;
+  padding : 15px;
+}
+.menu-bar ul li a
+{
+  text-decoration: none;
+  color: #f1f1f1;
+}
+.active,.menu-bar ul li:hover
+{
+  background: #f90;
+  border-radius: 2px;
+}
+.menu-bar .fa
+{
+  margin-right: 8px;
+}
+
+.sub-menu-1
+{
+  display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+  display: block;
+  position: absolute;
+  background-color: #020744;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+  border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+  color: #f90;
+}
+
+
+
+
+
+.logo
+{
+  position: fixed;
+  left: 2%;
+  top: 2.5%;
+  width: 40px;
+  height: 40px;
+}
+.aboutus
+{
+  position: fixed;
+  right: 0;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+/* Partie body*/
+
+.body-home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.categorie {
+  width: 400px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  display : block;
+}
+
+.categorie:hover {
+  transform: translateY(-5px);
+}
+
+.categorie img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.categorie h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.categorie p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.categorie .btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.categorie .btn:hover {
+  background-color: #0056b3;
+}
+/*Fin style body body*/
+
+
+/*Style intro body*/
+.introduction {
+  background-color: #87CEEB;
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 20px;
+  animation: fade-in 1s ease;
+}
+
+p {
+  font-size: 18px;
+  color: #fff;
+  animation: slide-up 1s ease;
+}
+
+.solde {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  animation: blink 2s infinite;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+} 
+
+/*fin Style intro body*/
+

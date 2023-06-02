@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Circle Timer Animation with Redirect</title>
+    <style>
+        .circle-timer {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #f2f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .circle {
+            position: relative;
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+            background-color: #007bff;
+            animation: fill 2s linear forwards;
+        }
+
+        @keyframes fill {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .redirect-link {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            z-index: 1;
+        }
+    </style>
+    <script>
+        // Function to start the circle timer animation and redirect after 5 seconds
+        function startCircleTimer() {
+            setTimeout(function() {
+                window.location.href = 'home.jsp'; // Replace with your desired link
+            }, 2000); // 2000 milliseconds = 2seconds
+        }
+    </script>
+</head>
+<body onload="startCircleTimer()">
+	<h1> Operation executé avec succès !!</h1>
+    <div class="circle-timer">
+        <div class="circle"></div>
+        <a href="home.jsp" class="redirect-link">Redirecting...</a>
+    </div>
+</body>
+</html>

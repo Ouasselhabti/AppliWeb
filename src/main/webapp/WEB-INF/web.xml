@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ProjetEcole</display-name>
+  <welcome-file-list>
+    <welcome-file>home.jsp</welcome-file>
+    <welcome-file>register.html</welcome-file>
+    <welcome-file>registration-success.html</welcome-file>
+    <welcome-file>error.html</welcome-file>
+    <welcome-file>success.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>Controller</servlet-name>
+  	<servlet-class>n7.fr.servlets.Controller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Controller</servlet-name>
+  	<url-pattern>/Controller</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ControllerRegister</servlet-name>
+  	<servlet-class>n7.fr.servlets.ControllerRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ControllerRegister</servlet-name>
+  	<url-pattern>/ControllerRegister</url-pattern>
+  </servlet-mapping>
+  <servlet>
+   <servlet-name>ConrolShowUSers</servlet-name>
+   <servlet-class>n7.fr.servlets.ControlShowUSers</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>ConrolShowUSers</servlet-name>
+   <url-pattern>/ConrolShowUSers</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>ServletTest</servlet-name>
+   <servlet-class>n7.fr.servlets.ServletTest</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>ServletTest</servlet-name>
+   <url-pattern>/ServletTest</url-pattern>
+</servlet-mapping>
+<servlet>
+   <servlet-name>ControllerAdmin</servlet-name>
+   <servlet-class>n7.fr.servlets.ControllerAdmin</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>ControllerAdmin</servlet-name>
+   <url-pattern>/ControllerAdmin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>ControllerAchat</servlet-name>
+   <servlet-class>n7.fr.servlets.ControllerAchat</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>ControllerAchat</servlet-name>
+   <url-pattern>/ControllerAchat</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>ControllerLogOut</servlet-name>
+   <servlet-class>n7.fr.servlets.ControllerLogOut</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>ControllerLogOut</servlet-name>
+   <url-pattern>/ControllerLogOut</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>ControllerCheckout</servlet-name>
+   <servlet-class>n7.fr.servlets.ControllerCheckout</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>ControllerCheckout</servlet-name>
+   <url-pattern>/ControllerCheckout</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+   <servlet-name>ControllerDeleteMatos</servlet-name>
+   <servlet-class>n7.fr.servlets.ControllerDeleteMatos</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>ControllerDeleteMatos</servlet-name>
+   <url-pattern>/ControllerDeleteMatos</url-pattern>
+</servlet-mapping>
+
+</web-app>

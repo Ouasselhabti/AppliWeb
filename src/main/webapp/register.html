@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ <link rel="stylesheet" href="./styling/styleRegister.css">
+ <link rel="stylesheet" type="text/css" href="./styling/global.css">
+</head>
+<body>
+<div class="login-form">
+  <form action = "ControllerRegister" method="post">
+    <h1>Register</h1>
+    <div class="content">
+      <div class="input-field">
+        <input type="text" name="userMail" placeholder="Email" autocomplete="nope">
+      </div>
+      <div class="input-field">
+        <input type="password" name="passWord" placeholder="Password" autocomplete="new-password">
+      </div>
+      <div class="input-field">
+        <input type="text" name="userFname" placeholder="Fname" autocomplete="nope">
+      </div>
+      <div class="input-field">
+        <input type="text" name="userLname" placeholder="Lname" autocomplete="nope">
+      </div>
+    </div>
+    <div class="action">
+      <input type="submit" name="operation" value="Finish Registration">
+    </div>
+  </form>
+</div>
+</body>
+</html>
